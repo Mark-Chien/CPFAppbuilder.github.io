@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<font id="title">Easy Control a</font><p><br>
+<font id="title">Easy Control </font><p><br>
 
 <div id="content" class="row">
 	<div class="col-sm-12  col-xs-12">
@@ -171,7 +171,7 @@
                	if(Result.includes("turn on") || Result.includes("客廳開燈")) {
 	       		if(cpf) {
 				cpf.request('board1', '["digitalWrite", 2 , 1]'); // turn on 
-				//cpf.request('board1', '["grove_setColorRGB", 0, 0, 170, 170]'); 
+				cpf.request('board1', '["grove_setColorRGB", 0, 0, 170, 170]'); 
 				//cpf.request('["digitalWrite", 2 , 1]'); // turn on 
 				//cpf.request('ttyACM0', '["grove_setColorRGB", 0, '+getrandom()+','+getrandom()+','+getrandom()+']'); 
 				//cpf.request('ttyACM1', '["grove_setColorRGB", 0, '+getrandom()+','+getrandom()+','+getrandom()+']'); 
@@ -180,7 +180,7 @@
 	       	} else if (Result.includes("客廳關燈") || Result.includes("turn off")) {
 	       		if(cpf) {
 				cpf.request('board1', '["digitalWrite", 2 , 0]'); // turn of 
-				//cpf.request('board1', '["grove_setColorRGB", 0, 0, 0, 0]'); 
+				cpf.request('board1', '["grove_setColorRGB", 0, 0, 0, 0]'); 
 				//cpf.request('["digitalWrite", 2 , 0]'); // turn off 
 				//cpf.request('ttyACM0', '["grove_setColorRGB", 0, '+getrandom()+','+getrandom()+','+getrandom()+']'); 
 				//cpf.request('ttyACM1', '["grove_setColorRGB", 0, '+getrandom()+','+getrandom()+','+getrandom()+']'); 
